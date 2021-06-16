@@ -3,7 +3,7 @@
 .blog-content,
 .footer-container {
   min-height: 100px;
-  max-width: 1200px;
+  max-width: 1170px;
   width: 100%;
   margin: auto;
 }
@@ -11,10 +11,10 @@
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
 }
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   font-size: 14px;
   color: #010101;
@@ -95,6 +95,7 @@ article {
 }
 .container-1 {
   display: flex;
+  display: -webkit-flex;
   padding: 0 15px;
 }
 .container-1 .ad-column-1 {
@@ -108,7 +109,7 @@ article {
 }
 .container-1 .ad-column-1 .ad1-banner h3 {
   font-size: 30px;
-  font-family: "Pacifico";
+  font-family: 'Pacifico';
 }
 .container-1 .ad-column-1 .ad1-banner .btn-banner a {
   background: #8262b5;
@@ -184,10 +185,12 @@ article {
 }
 .products .product-line-up {
   display: flex;
+  display: -webkit-flex;
   flex-wrap: wrap;
   margin: 0 -15px;
 }
 .products .product-line-up .item {
+  width: 292px;
   padding: 0 15px;
 }
 .products .product-line-up .item img {
@@ -219,7 +222,7 @@ article {
   font-weight: bolder;
 }
 .blog {
-  background-image: url("../img/blog-bg.png");
+  background-image: url('../img/blog-bg.png');
   height: 708px;
 }
 .blog .blog-content {
@@ -245,6 +248,7 @@ article {
 }
 .blog .blog-content .blog-listing {
   display: flex;
+  display: -webkit-flex;
   margin: 0 -15px;
   padding-top: 45px;
 }
@@ -291,7 +295,7 @@ article {
   color: #8262b5;
 }
 .blog .blog-content .blog-listing .blog-item .blog-info p {
-  font-family: "Open Sans";
+  font-family: 'Open Sans';
 }
 .blog .blog-content .blog-listing .blog-item .blog-info .social {
   border-top: 1px solid #ededed;
@@ -314,11 +318,12 @@ footer {
 footer .footer-container {
   padding: 64px 0 20px 0;
   display: flex;
+  display: -webkit-flex;
 }
 footer .footer-container .about-us {
   padding: 0 15px;
   width: 263px;
-  color: #fff;
+  color: #818181;
 }
 footer .footer-container .about-us h4 {
   color: #f7f7f7;
@@ -326,21 +331,23 @@ footer .footer-container .about-us h4 {
   border-bottom: 1px solid #ededed;
 }
 footer .footer-container .about-us p {
-  font-family: "Open Sans";
+  font-family: 'Open Sans';
   padding-bottom: 29px;
   font-size: 14px;
 }
 footer .footer-container .about-us ul {
   padding-left: 0;
   display: flex;
+  display: -webkit-flex;
   list-style: none;
 }
 footer .footer-container .about-us ul li {
   display: flex;
+  display: -webkit-flex;
   padding-right: 28px;
 }
 footer .footer-container .footer-menu {
-  color: #fff;
+  color: #818181;
   width: 585px;
   padding: 0 113px;
 }
@@ -365,7 +372,7 @@ footer .footer-container .footer-menu ul li {
 }
 footer .footer-container .location {
   width: 263px;
-  color: #fff;
+  color: #818181;
 }
 footer .footer-container .location h4 {
   color: #f7f7f7;
@@ -385,13 +392,13 @@ footer .copyright {
 }
 footer .copyright .rights {
   width: 1178px;
-  padding: 20px 0 15px;
-  color: #fff;
+  padding: 20px 0 15px 14px;
+  color: #818181;
   font-size: 14px;
   margin: auto;
 }
 footer .copyright .payments {
   display: inline-block;
   text-align: right;
-  padding-left: 650px;
+  padding-left: 646px;
 }
