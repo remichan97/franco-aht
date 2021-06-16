@@ -1,3 +1,12 @@
+.container-1,
+.products,
+.blog-content,
+.footer-container {
+  min-height: 100px;
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
+}
 * {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -62,7 +71,6 @@ body {
   text-transform: uppercase;
   white-space: normal;
   font-weight: bold;
-  font-family: Montserrat;
   color: #000;
   text-decoration: none;
 }
@@ -86,12 +94,8 @@ article {
   margin-top: 30px;
 }
 .container-1 {
-  min-height: 100px;
-  max-width: 1200px;
-  padding: 0 15px;
-  width: 100%;
-  margin: auto;
   display: flex;
+  padding: 0 15px;
 }
 .container-1 .ad-column-1 {
   width: 750px;
@@ -123,7 +127,6 @@ article {
   position: absolute;
   top: 230px;
   margin-left: 54px;
-  font-family: "Montserrat";
 }
 .container-1 .ad-column-2 .img-ad2 .ad2-banner h4 {
   text-transform: uppercase;
@@ -143,7 +146,6 @@ article {
   position: absolute;
 }
 .container-1 .ad-column-2 .img-ad3 .ad3-banner h4 {
-  font-family: "Montserrat";
   text-transform: uppercase;
   color: #616161;
   margin-bottom: 5px;
@@ -151,7 +153,6 @@ article {
   font-weight: 400;
 }
 .container-1 .ad-column-2 .img-ad3 .ad3-banner h3 {
-  font-family: "Montserrat";
   text-transform: uppercase;
   font-size: 20px;
   padding-bottom: 20px;
@@ -163,12 +164,7 @@ article {
   color: #fff;
 }
 .products {
-  min-height: 100px;
-  max-width: 1200px;
   padding: 0 15px;
-  width: 100%;
-  margin: auto;
-  font-family: "Montserrat";
 }
 .products .product-header p {
   padding-top: 65px;
@@ -227,14 +223,9 @@ article {
   height: 708px;
 }
 .blog .blog-content {
-  min-height: 100px;
-  max-width: 1200px;
   padding: 77px 15px 0;
-  width: 100%;
-  margin: auto;
 }
 .blog .blog-content .blog-header {
-  font-family: "Montserrat";
   text-align: center;
 }
 .blog .blog-content .blog-header p {
@@ -265,7 +256,6 @@ article {
   height: 200px;
 }
 .blog .blog-content .blog-listing .blog-item .blog-date {
-  font-family: "Montserrat";
   width: 60px;
   height: 50px;
   background-color: #a1d1dd;
@@ -285,7 +275,6 @@ article {
   color: #fff;
 }
 .blog .blog-content .blog-listing .blog-item .blog-info {
-  font-family: "Montserrat";
   position: relative;
   bottom: 56px;
   width: 360px;
@@ -323,11 +312,7 @@ footer {
   background-color: #222222;
 }
 footer .footer-container {
-  min-height: 100px;
-  max-width: 1200px;
   padding: 64px 0 20px 0;
-  width: 100%;
-  margin: auto;
   display: flex;
 }
 footer .footer-container .about-us {

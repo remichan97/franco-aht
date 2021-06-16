@@ -1,5 +1,12 @@
 @accent: rgb(130, 98, 181);
 
+.container-1, .products, .blog-content, .footer-container {
+	min-height: 100px;
+	max-width: 1200px;
+	width: 100%;
+	margin: auto;
+}
+
 * {
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -68,7 +75,6 @@ body {
 			text-transform: uppercase;
 			white-space: normal;
 			font-weight: bold;
-			font-family: Montserrat;
 			color: #000;
 			text-decoration: none;
 			&:hover {
@@ -97,12 +103,8 @@ article {
 }
 
 .container-1 {
-	min-height: 100px;
-	max-width: 1200px;
-	padding: 0 15px;
-	width: 100%;
-	margin: auto;
 	display: flex;
+	padding: 0 15px;
 	.ad-column-1 {
 		width: 750px;
 		.ad1-banner {
@@ -134,7 +136,6 @@ article {
 				position: absolute;
 				top: 230px;
 				margin-left: 54px;
-				font-family: "Montserrat";
 				h4 {
 					text-transform: uppercase;
 					color: #616161;
@@ -155,7 +156,6 @@ article {
 			line-height: 0;
 			position: absolute;
 			h4 {
-				font-family: "Montserrat";
 				text-transform: uppercase;
 				color: #616161;
 				margin-bottom: 5px;
@@ -163,7 +163,6 @@ article {
 				font-weight: 400;
 			}
 			h3 {
-				font-family: "Montserrat";
 				text-transform: uppercase;
 				font-size: 20px;
 				padding-bottom: 20px;
@@ -181,12 +180,7 @@ article {
 }
 
 .products {
-	min-height: 100px;
-	max-width: 1200px;
 	padding: 0 15px;
-	width: 100%;
-	margin: auto;
-	font-family: "Montserrat";
 	.product-header {
 		p {
 			padding-top: 65px;
@@ -249,13 +243,8 @@ article {
 	background-image: url("../img/blog-bg.png");
 	height: 708px;
 	.blog-content {
-		min-height: 100px;
-		max-width: 1200px;
 		padding: 77px 15px 0;
-		width: 100%;
-		margin: auto;
 		.blog-header {
-			font-family: "Montserrat";
 			text-align: center;
 			p {
 				color: @accent;
@@ -284,7 +273,6 @@ article {
 					height: 200px;
 				}
 				.blog-date {
-					font-family: "Montserrat";
 					width: 60px;
 					height: 50px;
 					background-color: #a1d1dd;
@@ -313,7 +301,6 @@ article {
 							color: @accent;
 						}
 					}
-					font-family: "Montserrat";
 					position: relative;
 					bottom: 56px;
 					width: 360px;
@@ -347,11 +334,7 @@ footer {
 	// max-height: 416px;
 	background-color: #222222;
 	.footer-container {
-		min-height: 100px;
-		max-width: 1200px;
 		padding: 64px 0 20px 0;
-		width: 100%;
-		margin: auto;
 		display: flex;
 		.about-us {
 			padding: 0 15px;
