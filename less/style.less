@@ -1,6 +1,13 @@
 @accent: rgb(130, 98, 181);
 @footer-colour: rgb(129, 129, 129);
 @footer-header: #f7f7f7;
+@white: #fff;
+@border-footer: rgb(129, 129, 129);
+@blog-date-colour: #a1d1dd;
+@footer-background: #222222;
+@menu-border-colour: #ddd;
+@text-colour: #000;
+@ads-small-banner: #616161;
 
 .container-1,
 .products,
@@ -16,16 +23,16 @@
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
-	font-family: 'Montserrat';
+	font-family: "Montserrat";
 }
 
 body {
-	font-family: 'Open Sans', sans-serif;
+	font-family: "Open Sans", sans-serif;
 	font-weight: 400;
 	font-size: 14px;
-	color: #010101;
+	color: @text-colour;
 	line-height: 24px;
-	background: #fff;
+	background: @white;
 }
 
 .head {
@@ -63,7 +70,7 @@ body {
 
 .menu-bar {
 	text-align: center;
-	border-bottom: 1px solid #ddd;
+	border-bottom: 1px solid @menu-border-colour;
 	position: relative;
 	.logo {
 		float: left;
@@ -80,7 +87,7 @@ body {
 			text-transform: uppercase;
 			white-space: normal;
 			font-weight: bold;
-			color: #000;
+			color: @text-colour;
 			text-decoration: none;
 			&:hover {
 				color: @accent;
@@ -120,14 +127,14 @@ article {
 			top: 460px;
 			h3 {
 				font-size: 30px;
-				font-family: 'Pacifico';
+				font-family: "Pacifico";
 			}
 			.btn-banner {
 				a {
 					background: @accent;
 					padding: 8px 17px;
 					text-decoration: none;
-					color: #fff;
+					color: @white;
 				}
 			}
 		}
@@ -144,7 +151,7 @@ article {
 				margin-left: 54px;
 				h4 {
 					text-transform: uppercase;
-					color: #616161;
+					color: @ads-small-banner;
 					margin-bottom: 5px;
 					letter-spacing: 3px;
 					font-weight: 400;
@@ -163,7 +170,7 @@ article {
 			position: absolute;
 			h4 {
 				text-transform: uppercase;
-				color: #616161;
+				color: @ads-small-banner;
 				margin-bottom: 5px;
 				letter-spacing: 3px;
 				font-weight: 400;
@@ -178,7 +185,7 @@ article {
 					background: @accent;
 					padding: 8px 17px;
 					text-decoration: none;
-					color: #fff;
+					color: @white;
 				}
 			}
 		}
@@ -221,8 +228,8 @@ article {
 				position: relative;
 				margin-left: 8px;
 				bottom: 149px;
-				background-color: #fff;
-				color: #000;
+				background-color: @white;
+				color: @text-colour;
 				text-decoration: none;
 				padding: 16px 24px 15px;
 				text-transform: uppercase;
@@ -248,7 +255,7 @@ article {
 }
 
 .blog {
-	background-image: url('../img/blog-bg.png');
+	background-image: url("../img/blog-bg.png");
 	height: 708px;
 	.blog-content {
 		padding: 77px 15px 0;
@@ -284,7 +291,7 @@ article {
 				.blog-date {
 					width: 60px;
 					height: 50px;
-					background-color: #a1d1dd;
+					background-color: @blog-date-colour;
 					position: relative;
 					bottom: 192px;
 					margin-left: 18px;
@@ -293,17 +300,17 @@ article {
 						width: 48px;
 						height: 48px;
 						text-align: center;
-						border: 1px #fff solid;
+						border: 1px @white solid;
 						p {
 							margin: 0;
-							color: #fff;
+							color: @white;
 						}
 					}
 				}
 				.blog-info {
 					a {
 						text-decoration: none;
-						color: #000;
+						color: @text-colour;
 						font-size: 16px;
 						font-weight: 700;
 						&:hover {
@@ -314,12 +321,12 @@ article {
 					bottom: 56px;
 					width: 360px;
 					padding: 15px 18px 0;
-					background-color: #fff;
+					background-color: @white;
 					p {
-						font-family: 'Open Sans';
+						font-family: "Open Sans";
 					}
 					.social {
-						border-top: 1px solid #ededed;
+						border-top: 1px solid @border-footer;
 						padding: 15px 18px 15px 0;
 						a {
 							font-size: 14px;
@@ -341,7 +348,7 @@ article {
 
 footer {
 	// max-height: 416px;
-	background-color: #222222;
+	background-color: @footer-background;
 	.footer-container {
 		padding: 64px 0 20px 0;
 		display: flex;
@@ -351,12 +358,12 @@ footer {
 			h4 {
 				color: @footer-header;
 				padding-bottom: 30px;
-				border-bottom: 1px solid #ededed;
+				border-bottom: 1px solid @border-footer;
 			}
 			width: 263px;
 			color: @footer-colour;
 			p {
-				font-family: 'Open Sans';
+				font-family: "Open Sans";
 				padding-bottom: 29px;
 				font-size: 14px;
 			}
@@ -380,7 +387,7 @@ footer {
 			h4 {
 				color: @footer-header;
 				padding-bottom: 30px;
-				border-bottom: 1px solid #ededed;
+				border-bottom: 1px solid @border-footer;
 			}
 			ul {
 				padding-left: 0;
@@ -405,7 +412,7 @@ footer {
 			h4 {
 				color: @footer-header;
 				padding-bottom: 30px;
-				border-bottom: 1px solid #ededed;
+				border-bottom: 1px solid @border-footer;
 			}
 			ul {
 				list-style: none;
@@ -420,7 +427,7 @@ footer {
 		}
 	}
 	.copyright {
-		border-top: 1px solid #ededed;
+		border-top: 1px solid @border-footer;
 		.rights {
 			// display: flex;
 			width: 1178px;

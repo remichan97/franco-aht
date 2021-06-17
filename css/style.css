@@ -11,13 +11,13 @@
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
 }
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 14px;
-  color: #010101;
+  color: #000;
   line-height: 24px;
   background: #fff;
 }
@@ -109,7 +109,7 @@ article {
 }
 .container-1 .ad-column-1 .ad1-banner h3 {
   font-size: 30px;
-  font-family: 'Pacifico';
+  font-family: "Pacifico";
 }
 .container-1 .ad-column-1 .ad1-banner .btn-banner a {
   background: #8262b5;
@@ -222,7 +222,7 @@ article {
   font-weight: bolder;
 }
 .blog {
-  background-image: url('../img/blog-bg.png');
+  background-image: url("../img/blog-bg.png");
   height: 708px;
 }
 .blog .blog-content {
@@ -295,10 +295,10 @@ article {
   color: #8262b5;
 }
 .blog .blog-content .blog-listing .blog-item .blog-info p {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
 }
 .blog .blog-content .blog-listing .blog-item .blog-info .social {
-  border-top: 1px solid #ededed;
+  border-top: 1px solid #818181;
   padding: 15px 18px 15px 0;
 }
 .blog .blog-content .blog-listing .blog-item .blog-info .social a {
@@ -328,10 +328,10 @@ footer .footer-container .about-us {
 footer .footer-container .about-us h4 {
   color: #f7f7f7;
   padding-bottom: 30px;
-  border-bottom: 1px solid #ededed;
+  border-bottom: 1px solid #818181;
 }
 footer .footer-container .about-us p {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   padding-bottom: 29px;
   font-size: 14px;
 }
@@ -354,7 +354,7 @@ footer .footer-container .footer-menu {
 footer .footer-container .footer-menu h4 {
   color: #f7f7f7;
   padding-bottom: 30px;
-  border-bottom: 1px solid #ededed;
+  border-bottom: 1px solid #818181;
 }
 footer .footer-container .footer-menu ul {
   padding-left: 0;
@@ -377,7 +377,7 @@ footer .footer-container .location {
 footer .footer-container .location h4 {
   color: #f7f7f7;
   padding-bottom: 30px;
-  border-bottom: 1px solid #ededed;
+  border-bottom: 1px solid #818181;
 }
 footer .footer-container .location ul {
   list-style: none;
@@ -388,7 +388,7 @@ footer .footer-container .location ul li p {
   padding-left: 30px;
 }
 footer .copyright {
-  border-top: 1px solid #ededed;
+  border-top: 1px solid #818181;
 }
 footer .copyright .rights {
   width: 1178px;
