@@ -11,7 +11,8 @@
 		<title>Franco Demo</title>
 		<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&display=swap" rel="stylesheet">
-		<link rel="stylesheet" href="./node_modules/tiny-slider/dist/tiny-slider.css">
+		<link rel="stylesheet" href="./OwlCarousel/dist/assets/owl.carousel.min.css">
+		<link rel="stylesheet" href="./OwlCarousel/dist/assets/owl.theme.default.min.css">
 		<link rel="stylesheet" href="./css/style.css">
 	</head>
 
@@ -277,7 +278,7 @@
 						<p>latest</p>
 						<h3>news & event</h3>
 					</div>
-					<div class="blog-listing">
+					<div class="blog-listing owl-carousel owl-theme">
 						<div class="blog-item">
 							<img src="./img/blog1.png" alt="Blog Image">
 							<div class="blog-date">
@@ -405,9 +406,18 @@
 						<i class="fa fa-cc-amex" aria-hidden="true"></i>
 					</div>
 				</div>
-				
+
 			</div>
 		</footer>
 	</body>
+	<script src="./jquery-3.6.0.min.js"></script>
+	<script src="./OwlCarousel/dist/owl.carousel.min.js"></script>
+	<script type="text/javascript">
+		$('.owl-carousel').owlCarousel({
+			loop: true,
+			margin: 5,
+			nav: false,
+		})
+	</script>
 
 </html>
