@@ -60,10 +60,8 @@ body {
 }
 .menu-bar .logo {
   float: left;
-  padding-left: 30px;
-  padding-top: 19px;
   position: relative;
-  padding-bottom: 20px;
+  padding: 19px 0 19px 30px;
 }
 .menu-bar .menu a {
   padding: 28px 25px;
