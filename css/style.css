@@ -383,6 +383,10 @@ footer .footer-container .footer-menu ul li {
   width: 195px;
   padding: 0 15px 10px 0;
 }
+footer .footer-container .footer-menu ul li:hover {
+  color: #fff;
+  text-decoration: underline;
+}
 footer .footer-container .location {
   width: 263px;
   color: #818181;
