@@ -95,14 +95,20 @@ body {
 
 	.wish-list {
 		position: absolute;
-		top: 6px;
+		top: 10px;
 		right: 30px;
 		vertical-align: middle;
 		display: inline-block;
 		li {
+			i {
+				font-size: 30px;
+			}
 			list-style: none;
 			display: inline-block;
 			font-size: 18px;
+			&:last-child {
+				padding: 0 0 0 30px;
+			}
 		}
 	}
 }
