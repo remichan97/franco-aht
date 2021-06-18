@@ -7,6 +7,16 @@
   width: 100%;
   margin: auto;
 }
+.preview-1 a,
+.preview-2 a {
+  position: absolute;
+  margin-left: 8px;
+  background-color: #fff;
+  color: #000;
+  text-decoration: none;
+  padding: 16px 24px 15px;
+  text-transform: uppercase;
+}
 * {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -62,6 +72,9 @@ body {
   float: left;
   position: relative;
   padding: 19px 0 19px 30px;
+}
+.menu-bar .menu {
+  width: 1640px;
 }
 .menu-bar .menu a {
   padding: 28px 25px;
@@ -202,29 +215,14 @@ article {
   height: 322px;
 }
 .products .product-line-up .item .product-desc .preview-1 a {
-  position: absolute;
-  margin-left: 8px;
   top: 1142px;
-  background-color: #fff;
-  color: #000;
-  text-decoration: none;
-  padding: 16px 24px 15px;
-  text-transform: uppercase;
 }
 .products .product-line-up .item .product-desc .preview-1 a:hover {
   color: #8262b5;
   transition: ease-in 0.2s;
 }
 .products .product-line-up .item .product-desc .preview-2 a {
-  position: absolute;
-  margin-left: 8px;
-  bottom: 5;
-  top: 1595px;
-  background-color: #fff;
-  color: #000;
-  text-decoration: none;
-  padding: 16px 24px 15px;
-  text-transform: uppercase;
+  top: 1628px;
 }
 .products .product-line-up .item .product-desc .preview-2 a:hover {
   color: #8262b5;
@@ -232,9 +230,17 @@ article {
 }
 .products .product-line-up .item .product-desc p {
   font-weight: bold;
+  padding: 10px 0 15px 0;
+  margin: 0;
+}
+.products .product-line-up .item .product-desc .rating {
+  padding-bottom: 10px;
 }
 .products .product-line-up .item .product-desc .rating span {
   color: #f8ba04;
+}
+.products .product-line-up .item .product-desc .price {
+  padding-bottom: 50px;
 }
 .products .product-line-up .item .product-desc .price span {
   color: #8262b5;
