@@ -10,11 +10,12 @@
 .preview-1 a,
 .preview-2 a {
   position: absolute;
+  font-size: 12px;
   margin-left: 8px;
   background-color: #fff;
   color: #000;
   text-decoration: none;
-  padding: 16px 24px 15px;
+  padding: 9px 16px;
   text-transform: uppercase;
 }
 * {
@@ -215,14 +216,14 @@ article {
   height: 322px;
 }
 .products .product-line-up .item .product-desc .preview-1 a {
-  top: 1142px;
+  top: 1155px;
 }
 .products .product-line-up .item .product-desc .preview-1 a:hover {
   color: #8262b5;
   transition: ease-in 0.2s;
 }
 .products .product-line-up .item .product-desc .preview-2 a {
-  top: 1628px;
+  top: 1642px;
 }
 .products .product-line-up .item .product-desc .preview-2 a:hover {
   color: #8262b5;
@@ -285,17 +286,22 @@ article {
   height: 200px;
 }
 .blog .blog-content .blog-listing .blog-item .blog-date {
-  width: 60px;
-  height: 50px;
+  width: 62px;
+  height: 60px;
   background-color: #a1d1dd;
-  position: relative;
-  bottom: 192px;
+  position: absolute;
+  bottom: 5px;
+  top: 20px;
   margin-left: 18px;
 }
 .blog .blog-content .blog-listing .blog-item .blog-date .date {
   margin: 0 auto;
-  width: 48px;
-  height: 48px;
+  position: absolute;
+  top: 5px;
+  bottom: 5px;
+  left: 6px;
+  width: 50px;
+  height: 50px;
   text-align: center;
   border: 1px #fff solid;
 }
@@ -305,7 +311,6 @@ article {
 }
 .blog .blog-content .blog-listing .blog-item .blog-info {
   position: relative;
-  bottom: 56px;
   width: 360px;
   padding: 15px 18px 0;
   background-color: #fff;
@@ -332,7 +337,7 @@ article {
 }
 .blog .load {
   position: relative;
-  bottom: 20px;
+  bottom: -30px;
   width: 100%;
   display: block;
   text-align: center;
