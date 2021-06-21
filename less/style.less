@@ -12,6 +12,7 @@
 @text-colour: #000;
 @ads-small-banner: #616161;
 @rating: rgb(248, 186, 4);
+@social-colour: rgb(196, 196, 196);
 //Header
 @text-header: #525252;
 @background-header: #222;
@@ -368,9 +369,11 @@ article {
 						font-family: 'Open Sans';
 					}
 					.social {
-						border-top: 1px solid @border-footer;
+						border-top: 1px solid @social-colour;
 						padding: 15px 18px 15px 0;
 						a {
+							font-weight: 400;
+							color: @social-colour;
 							font-size: 14px;
 							margin-right: 37px;
 						}

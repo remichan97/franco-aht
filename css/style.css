@@ -328,10 +328,12 @@ article {
   font-family: 'Open Sans';
 }
 .blog .blog-content .blog-listing .blog-item .blog-info .social {
-  border-top: 1px solid #818181;
+  border-top: 1px solid #c4c4c4;
   padding: 15px 18px 15px 0;
 }
 .blog .blog-content .blog-listing .blog-item .blog-info .social a {
+  font-weight: 400;
+  color: #c4c4c4;
   font-size: 14px;
   margin-right: 37px;
 }
