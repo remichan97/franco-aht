@@ -99,17 +99,22 @@ body {
 	}
 	.menu {
 		width: 1640px;
-		a {
-			padding: 28px 25px;
-			display: inline-block;
-			text-transform: uppercase;
-			white-space: normal;
-			font-weight: bold;
-			color: @text-colour;
-			text-decoration: none;
-			&:hover {
-				color: @accent;
-				transition: ease-in 0.2s;
+		ul {
+			list-style-type: none;
+			margin: 0;
+			li {
+				padding: 28px 25px;
+				display: inline-block;
+				text-transform: uppercase;
+				white-space: normal;
+				a {
+					font-weight: bold;
+					color: @text-colour;
+					text-decoration: none;
+					&:hover {
+						color: @accent;
+					}
+				}
 			}
 		}
 	}

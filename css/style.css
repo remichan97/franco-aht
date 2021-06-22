@@ -77,18 +77,23 @@ body {
 .menu-bar .menu {
   width: 1640px;
 }
-.menu-bar .menu a {
+.menu-bar .menu ul {
+  list-style-type: none;
+  margin: 0;
+}
+.menu-bar .menu ul li {
   padding: 28px 25px;
   display: inline-block;
   text-transform: uppercase;
   white-space: normal;
+}
+.menu-bar .menu ul li a {
   font-weight: bold;
   color: #000;
   text-decoration: none;
 }
-.menu-bar .menu a:hover {
+.menu-bar .menu ul li a:hover {
   color: #8262b5;
-  transition: ease-in 0.2s;
 }
 .menu-bar .wish-list {
   position: absolute;
