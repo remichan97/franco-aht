@@ -1,4 +1,4 @@
-.container-1,
+.container,
 .products,
 .blog-content,
 .footer-container {
@@ -116,72 +116,79 @@ body {
 article {
   margin-top: 30px;
 }
-.container-1 {
+.container {
   display: flex;
   display: -webkit-flex;
   padding: 0 15px;
 }
-.container-1 .ad-column-1 {
-  width: 750px;
+.container img {
+  width: 100%;
 }
-.container-1 .ad-column-1 .ad1-banner {
+.container .ad-column-1 .img-ad1 {
+  position: relative;
+}
+.container .ad-column-1 .img-ad1 .ad1-banner {
   text-align: right;
   position: absolute;
-  left: 38%;
-  top: 460px;
+  left: 45%;
+  bottom: 130px;
 }
-.container-1 .ad-column-1 .ad1-banner h3 {
+.container .ad-column-1 .img-ad1 .ad1-banner h3 {
   font-size: 30px;
   font-family: 'Pacifico';
 }
-.container-1 .ad-column-1 .ad1-banner .btn-banner a {
+.container .ad-column-1 .img-ad1 .ad1-banner .btn-banner a {
   background: #8262b5;
   padding: 8px 17px;
   text-decoration: none;
   color: #fff;
 }
-.container-1 .ad-column-2 {
+.container .ad-column-2 {
   padding-left: 30px;
 }
-.container-1 .ad-column-2 .img-ad2 {
+.container .ad-column-2 .img-ad2 {
+  position: relative;
   padding-bottom: 22px;
 }
-.container-1 .ad-column-2 .img-ad2 .ad2-banner {
+.container .ad-column-2 .img-ad2 .ad2-banner {
   line-height: 0;
   position: absolute;
-  top: 230px;
+  bottom: 104px;
   margin-left: 54px;
 }
-.container-1 .ad-column-2 .img-ad2 .ad2-banner h4 {
+.container .ad-column-2 .img-ad2 .ad2-banner h4 {
   text-transform: uppercase;
   color: #616161;
   margin-bottom: 5px;
   letter-spacing: 3px;
   font-weight: 400;
 }
-.container-1 .ad-column-2 .img-ad2 .ad2-banner h3 {
+.container .ad-column-2 .img-ad2 .ad2-banner h3 {
   text-transform: uppercase;
   font-size: 20px;
 }
-.container-1 .ad-column-2 .img-ad3 .ad3-banner {
+.container .ad-column-2 .img-ad3 {
+  position: relative;
+}
+.container .ad-column-2 .img-ad3 .ad3-banner {
   margin-left: 54px;
-  top: 515px;
+  bottom: 112px;
   line-height: 0;
   position: absolute;
 }
-.container-1 .ad-column-2 .img-ad3 .ad3-banner h4 {
+.container .ad-column-2 .img-ad3 .ad3-banner h4 {
   text-transform: uppercase;
   color: #616161;
   margin-bottom: 5px;
   letter-spacing: 3px;
   font-weight: 400;
 }
-.container-1 .ad-column-2 .img-ad3 .ad3-banner h3 {
+.container .ad-column-2 .img-ad3 .ad3-banner h3 {
   text-transform: uppercase;
   font-size: 20px;
   padding-bottom: 20px;
 }
-.container-1 .ad-column-2 .img-ad3 .ad3-banner .btn-banner a {
+.container .ad-column-2 .img-ad3 .ad3-banner .btn-banner a {
   background: #8262b5;
   padding: 8px 17px;
   text-decoration: none;
@@ -220,17 +227,21 @@ article {
   width: 263px;
   height: 322px;
 }
-.products .product-line-up .item .product-desc .preview-1 a {
-  top: 1155px;
+.products .product-line-up .item .product-desc .preview {
+  position: relative;
 }
-.products .product-line-up .item .product-desc .preview-1 a:hover {
-  color: #8262b5;
-  transition: ease-in 0.2s;
+.products .product-line-up .item .product-desc .preview a {
+  position: absolute;
+  bottom: 12px;
+  background-color: #fff;
+  left: 5px;
+  padding: 16px 25px;
+  text-decoration: none;
+  color: #000;
+  font-size: 12px;
+  text-transform: uppercase;
 }
-.products .product-line-up .item .product-desc .preview-2 a {
-  top: 1642px;
-}
-.products .product-line-up .item .product-desc .preview-2 a:hover {
+.products .product-line-up .item .product-desc .preview a:hover {
   color: #8262b5;
   transition: ease-in 0.2s;
 }
