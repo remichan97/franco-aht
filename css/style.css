@@ -1,3 +1,8 @@
+@media screen and (max-width: 1280px) {
+  .menu {
+    width: 50%;
+  }
+}
 .container,
 .products,
 .blog-content,
@@ -64,7 +69,7 @@ body {
   padding: 19px 0 19px 30px;
 }
 .menu-bar .menu {
-  width: 1640px;
+  width: 90%;
 }
 .menu-bar .menu ul {
   list-style-type: none;
@@ -358,8 +363,9 @@ footer .footer-container {
   display: -webkit-flex;
 }
 footer .footer-container .about-us {
+  margin-right: calc(127/1140*100%);
   padding: 0 15px;
-  width: 263px;
+  width: calc(3/12*100%);
   color: #818181;
 }
 footer .footer-container .about-us h4 {
@@ -385,8 +391,7 @@ footer .footer-container .about-us ul li {
 }
 footer .footer-container .footer-menu {
   color: #818181;
-  width: 585px;
-  padding: 0 113px;
+  width: calc(4/12*100%);
 }
 footer .footer-container .footer-menu h4 {
   color: #f7f7f7;
@@ -412,7 +417,8 @@ footer .footer-container .footer-menu ul li:hover {
   text-decoration: underline;
 }
 footer .footer-container .location {
-  width: 263px;
+  margin-left: calc(127/1140*100%);
+  width: calc(3/12*100%);
   color: #818181;
 }
 footer .footer-container .location h4 {
@@ -432,14 +438,18 @@ footer .copyright {
   border-top: 1px solid #818181;
 }
 footer .copyright .rights {
-  width: 1178px;
+  width: 1170px;
+  display: flex;
   padding: 20px 0 15px 14px;
   color: #818181;
   font-size: 14px;
   margin: auto;
 }
+footer .copyright .rights .rights-text {
+  width: calc(10/12*100%);
+}
 footer .copyright .payments {
+  width: calc(2/12*100%);
   display: inline-block;
   text-align: right;
-  padding-left: 646px;
 }

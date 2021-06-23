@@ -408,7 +408,9 @@
 			</div>
 			<div class="copyright">
 				<div class="rights">
-					&copy;&nbsp;Copyright 2015 & Made with ❤ by Arrowhitech
+					<div class="rights-text">
+						&copy;&nbsp;Copyright 2015 & Made with ❤ by Arrowhitech
+					</div>
 					<div class="payments">
 						<i class="fa fa-cc-visa" aria-hidden="true"></i>
 						<i class="fa fa-cc-paypal" aria-hidden="true"></i>
@@ -428,6 +430,19 @@
 			loop: true,
 			margin: 5,
 			nav: false,
+			dots: false,
+			responsive: {
+				0: {
+					center: true,
+					items: 1
+				},
+				1024: {
+					items: 2
+				},
+				1200: {
+					items: 3
+				}
+			}
 		})
 	</script>
 

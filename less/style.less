@@ -18,8 +18,17 @@
 @background-header: #222;
 
 //Responsive media Queries
+@media screen and (max-width: 1024px) {
 
+}
 
+@media screen and (max-width: 1280px) {
+	.menu {
+		width: 50%;
+	}
+}
+
+//Common Properties
 .container,
 .products,
 .blog-content,
@@ -90,7 +99,7 @@ body {
 		padding: 19px 0 19px 30px;
 	}
 	.menu {
-		width: 1640px;
+		width: 90%;
 		ul {
 			list-style-type: none;
 			margin: 0;
@@ -405,13 +414,14 @@ footer {
 		display: flex;
 		display: -webkit-flex;
 		.about-us {
+			margin-right: calc(127/1140*100%);
 			padding: 0 15px;
 			h4 {
 				color: @footer-header;
 				padding-bottom: 30px;
 				border-bottom: 1px solid @border-footer;
 			}
-			width: 263px;
+			width: calc(3/12*100%);
 			color: @footer-colour;
 			p {
 				font-family: 'Open Sans';
@@ -432,8 +442,7 @@ footer {
 		}
 		.footer-menu {
 			color: @footer-colour;
-			width: 585px;
-			padding: 0 113px;
+			width: calc(4/12*100%);
 			h4 {
 				color: @footer-header;
 				padding-bottom: 30px;
@@ -460,7 +469,8 @@ footer {
 		}
 
 		.location {
-			width: 263px;
+			margin-left: calc(127/1140*100%);
+			width: calc(3/12*100%);
 			color: @footer-colour;
 			h4 {
 				color: @footer-header;
@@ -482,16 +492,21 @@ footer {
 	.copyright {
 		border-top: 1px solid @border-footer;
 		.rights {
-			width: 1178px;
+			width: 1170px;
+			display: flex;
 			padding: 20px 0 15px 14px;
 			color: @footer-colour;
 			font-size: 14px;
 			margin: auto;
+			.rights-text {
+				width: calc(10/12*100%);
+			}
 		}
 		.payments {
+			width: calc(2/12*100%);
 			display: inline-block;
 			text-align: right;
-			padding-left: 646px;
+			// padding-left: 646px;
 		}
 	}
 }
