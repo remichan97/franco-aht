@@ -17,23 +17,12 @@
 @text-header: #525252;
 @background-header: #222;
 
-//Responsive media Queries
-@media screen and (max-width: 1024px) {
-
-}
-
-@media screen and (max-width: 1280px) {
-	.menu {
-		width: 50%;
-	}
-}
-
 //Common Properties
 .container,
 .products,
 .blog-content,
-.footer-container {
-	min-height: 100px;
+.footer-container,
+.rights {
 	max-width: 1170px;
 	width: 100%;
 	margin: auto;
@@ -43,11 +32,11 @@
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
-	font-family: 'Montserrat';
+	font-family: "Montserrat";
 }
 
 body {
-	font-family: 'Open Sans', sans-serif;
+	font-family: "Open Sans", sans-serif;
 	font-weight: 400;
 	font-size: 14px;
 	color: @text-colour;
@@ -161,7 +150,7 @@ article {
 				bottom: 130px;
 				h3 {
 					font-size: 30px;
-					font-family: 'Pacifico';
+					font-family: "Pacifico";
 				}
 				.btn-banner {
 					a {
@@ -199,10 +188,9 @@ article {
 			}
 		}
 
-		.img-ad3
-		 {
+		.img-ad3 {
 			position: relative;
-			 .ad3-banner {
+			.ad3-banner {
 				margin-left: 54px;
 				bottom: 112px;
 				line-height: 0;
@@ -228,7 +216,7 @@ article {
 					}
 				}
 			}
-		 } 
+		}
 	}
 }
 
@@ -310,7 +298,7 @@ article {
 }
 
 .blog {
-	background-image: url('../img/blog-bg.png');
+	background-image: url("../img/blog-bg.png");
 	height: 708px;
 	.blog-content {
 		padding: 77px 15px 0;
@@ -382,7 +370,7 @@ article {
 					padding: 15px 18px 0;
 					background-color: @white;
 					p {
-						font-family: 'Open Sans';
+						font-family: "Open Sans";
 					}
 					.social {
 						border-top: 1px solid @social-colour;
@@ -414,17 +402,17 @@ footer {
 		display: flex;
 		display: -webkit-flex;
 		.about-us {
-			margin-right: calc(127/1140*100%);
+			margin-right: calc(127 / 1140 * 100%);
 			padding: 0 15px;
 			h4 {
 				color: @footer-header;
 				padding-bottom: 30px;
 				border-bottom: 1px solid @border-footer;
 			}
-			width: calc(3/12*100%);
+			width: calc(3 / 12 * 100%);
 			color: @footer-colour;
 			p {
-				font-family: 'Open Sans';
+				font-family: "Open Sans";
 				padding-bottom: 29px;
 				font-size: 14px;
 			}
@@ -442,7 +430,7 @@ footer {
 		}
 		.footer-menu {
 			color: @footer-colour;
-			width: calc(4/12*100%);
+			width: calc(4 / 12 * 100%);
 			h4 {
 				color: @footer-header;
 				padding-bottom: 30px;
@@ -469,8 +457,8 @@ footer {
 		}
 
 		.location {
-			margin-left: calc(127/1140*100%);
-			width: calc(3/12*100%);
+			margin-left: calc(127 / 1140 * 100%);
+			width: calc(3 / 12 * 100%);
 			color: @footer-colour;
 			h4 {
 				color: @footer-header;
@@ -492,21 +480,50 @@ footer {
 	.copyright {
 		border-top: 1px solid @border-footer;
 		.rights {
-			width: 1170px;
 			display: flex;
 			padding: 20px 0 15px 14px;
 			color: @footer-colour;
 			font-size: 14px;
 			margin: auto;
 			.rights-text {
-				width: calc(10/12*100%);
+				width: calc(10 / 12 * 100%);
 			}
 		}
 		.payments {
-			width: calc(2/12*100%);
+			width: calc(2 / 12 * 100%);
 			display: inline-block;
 			text-align: right;
-			// padding-left: 646px;
+			margin-right: 1%;
+		}
+	}
+}
+
+//Responsive Footer
+@media only screen and (max-width: 1024px) {
+	footer {
+		.footer-container {
+			padding-left: 15px;
+			flex-wrap: wrap;
+			flex-direction: row;
+			.about-us {
+				padding: 0;
+				margin-right: unset;
+				width: unset;
+			}
+			.footer-menu {
+				width: unset;
+			}
+			.location {
+				width: 100%;
+				margin-left: unset;
+				ul {
+					li {
+						p {
+							padding-left: 10px;
+						}
+					}
+				}
+			}
 		}
 	}
 }
