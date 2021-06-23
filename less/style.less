@@ -17,7 +17,11 @@
 @text-header: #525252;
 @background-header: #222;
 
-.container-1,
+//Responsive media Queries
+
+
+//Common CSS Properties
+.container,
 .products,
 .blog-content,
 .footer-container {
@@ -25,18 +29,6 @@
 	max-width: 1170px;
 	width: 100%;
 	margin: auto;
-}
-
-.preview-1 a,
-.preview-2 a {
-	position: absolute;
-    font-size: 12px;
-    margin-left: 8px;
-    background-color: @white;
-    color: @text-colour;
-    text-decoration: none;
-    padding: 9px 16px;
-    text-transform: uppercase;
 }
 
 * {
@@ -55,6 +47,7 @@ body {
 	background: @white;
 }
 
+//Individual Properties
 .head {
 	margin-left: -15px;
 	margin-right: -15px;
@@ -143,27 +136,32 @@ article {
 	margin-top: 30px;
 }
 
-.container-1 {
+.container {
 	display: flex;
 	display: -webkit-flex;
 	padding: 0 15px;
+	img {
+		width: 100%;
+	}
 	.ad-column-1 {
-		width: 750px;
-		.ad1-banner {
-			text-align: right;
-			position: absolute;
-			left: 38%;
-			top: 460px;
-			h3 {
-				font-size: 30px;
-				font-family: 'Pacifico';
-			}
-			.btn-banner {
-				a {
-					background: @accent;
-					padding: 8px 17px;
-					text-decoration: none;
-					color: @white;
+		.img-ad1 {
+			position: relative;
+			.ad1-banner {
+				text-align: right;
+				position: absolute;
+				left: 45%;
+				bottom: 130px;
+				h3 {
+					font-size: 30px;
+					font-family: 'Pacifico';
+				}
+				.btn-banner {
+					a {
+						background: @accent;
+						padding: 8px 17px;
+						text-decoration: none;
+						color: @white;
+					}
 				}
 			}
 		}
@@ -172,11 +170,12 @@ article {
 	.ad-column-2 {
 		padding-left: 30px;
 		.img-ad2 {
+			position: relative;
 			padding-bottom: 22px;
 			.ad2-banner {
 				line-height: 0;
 				position: absolute;
-				top: 230px;
+				bottom: 104px;
 				margin-left: 54px;
 				h4 {
 					text-transform: uppercase;
@@ -192,32 +191,36 @@ article {
 			}
 		}
 
-		.img-ad3 .ad3-banner {
-			margin-left: 54px;
-			top: 515px;
-			line-height: 0;
-			position: absolute;
-			h4 {
-				text-transform: uppercase;
-				color: @ads-small-banner;
-				margin-bottom: 5px;
-				letter-spacing: 3px;
-				font-weight: 400;
-			}
-			h3 {
-				text-transform: uppercase;
-				font-size: 20px;
-				padding-bottom: 20px;
-			}
-			.btn-banner {
-				a {
-					background: @accent;
-					padding: 8px 17px;
-					text-decoration: none;
-					color: @white;
+		.img-ad3
+		 {
+			position: relative;
+			 .ad3-banner {
+				margin-left: 54px;
+				bottom: 112px;
+				line-height: 0;
+				position: absolute;
+				h4 {
+					text-transform: uppercase;
+					color: @ads-small-banner;
+					margin-bottom: 5px;
+					letter-spacing: 3px;
+					font-weight: 400;
+				}
+				h3 {
+					text-transform: uppercase;
+					font-size: 20px;
+					padding-bottom: 20px;
+				}
+				.btn-banner {
+					a {
+						background: @accent;
+						padding: 8px 17px;
+						text-decoration: none;
+						color: @white;
+					}
 				}
 			}
-		}
+		 } 
 	}
 }
 
@@ -255,18 +258,18 @@ article {
 				height: 322px;
 			}
 			.product-desc {
-				.preview-1 {
+				.preview {
+					position: relative;
 					a {
-						top: 1155px;
-						&:hover {
-							color: @accent;
-							transition: ease-in 0.2s;
-						}
-					}
-				}
-				.preview-2 {
-					a {
-						top: 1642px;
+						position: absolute;
+						bottom: 12px;
+						background-color: @white;
+						left: 5px;
+						padding: 16px 25px;
+						text-decoration: none;
+						color: @text-colour;
+						font-size: 12px;
+						text-transform: uppercase;
 						&:hover {
 							color: @accent;
 							transition: ease-in 0.2s;
