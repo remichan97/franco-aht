@@ -144,7 +144,7 @@ nav .mobile-menu {
 }
 @media screen and (max-width: 1240px) {
   nav .mobile-menu {
-    display: block;
+    display: none;
   }
   nav .mobile-menu ul {
     padding-left: 0;
@@ -161,6 +161,16 @@ nav .mobile-menu {
   }
   nav .mobile-menu ul li a:hover {
     color: #8262b5;
+  }
+  nav .mobile-menu ul li #searchbar {
+    font-size: 24px;
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid #525252;
+  }
+  nav .mobile-menu ul li #searchbar:focus {
+    border-bottom: 1px solid #8262b5;
+    outline: none;
   }
 }
 article {
