@@ -32,11 +32,11 @@
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
-	font-family: 'Montserrat';
+	font-family: "Montserrat";
 }
 
 body {
-	font-family: 'Open Sans', sans-serif;
+	font-family: "Open Sans", sans-serif;
 	font-weight: 400;
 	font-size: 14px;
 	color: @text-colour;
@@ -77,11 +77,18 @@ body {
 		}
 	}
 }
+//Header responsive
+@media screen and (max-width: 600px) {
+	
+}
 
 .menu-bar {
 	text-align: center;
 	border-bottom: 1px solid @menu-border-colour;
 	position: relative;
+	.hamburger-menu {
+		display: none;
+	}
 	.logo {
 		float: left;
 		position: relative;
@@ -128,6 +135,32 @@ body {
 		}
 	}
 }
+//Responsive for menu bar
+@media screen and (max-width: 1024px) {
+	.menu-bar {
+		.hamburger-menu {
+			display: block;
+			.menu-bar {
+				float: left;
+				position: relative;
+				padding: 24px 0 19px 30px;
+				font-size: 30px;
+				border: 0;
+				z-index: 2;
+				a {
+					color: @text-colour;
+				}
+			}
+		}
+		.menu {
+			display: none;
+		}
+		.logo {
+			width: 93%;
+			float: unset;
+		}
+	}
+}
 
 article {
 	margin-top: 30px;
@@ -150,7 +183,7 @@ article {
 				bottom: 29%;
 				h3 {
 					font-size: 30px;
-					font-family: 'Pacifico';
+					font-family: "Pacifico";
 				}
 				.btn-banner {
 					a {
@@ -257,7 +290,6 @@ article {
 	}
 }
 
-
 .products {
 	padding: 0 15px;
 	.product-header {
@@ -336,7 +368,7 @@ article {
 }
 
 .blog {
-	background-image: url('../img/blog-bg.png');
+	background-image: url("../img/blog-bg.png");
 	height: 708px;
 	.blog-content {
 		padding: 77px 15px 0;
@@ -409,7 +441,7 @@ article {
 					padding: 15px 18px 0;
 					background-color: @white;
 					p {
-						font-family: 'Open Sans';
+						font-family: "Open Sans";
 					}
 					.social {
 						border-top: 1px solid @social-colour;
@@ -451,7 +483,7 @@ footer {
 			width: calc(3 / 12 * 100%);
 			color: @footer-colour;
 			p {
-				font-family: 'Open Sans';
+				font-family: "Open Sans";
 				padding-bottom: 29px;
 				font-size: 14px;
 			}
