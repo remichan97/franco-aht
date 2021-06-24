@@ -32,11 +32,11 @@
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
-	font-family: "Montserrat";
+	font-family: 'Montserrat';
 }
 
 body {
-	font-family: "Open Sans", sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-weight: 400;
 	font-size: 14px;
 	color: @text-colour;
@@ -147,10 +147,10 @@ article {
 				text-align: right;
 				position: absolute;
 				left: 45%;
-				bottom: 130px;
+				bottom: 29%;
 				h3 {
 					font-size: 30px;
-					font-family: "Pacifico";
+					font-family: 'Pacifico';
 				}
 				.btn-banner {
 					a {
@@ -172,7 +172,7 @@ article {
 			.ad2-banner {
 				line-height: 0;
 				position: absolute;
-				bottom: 104px;
+				bottom: 44%;
 				margin-left: 54px;
 				h4 {
 					text-transform: uppercase;
@@ -192,7 +192,7 @@ article {
 			position: relative;
 			.ad3-banner {
 				margin-left: 54px;
-				bottom: 112px;
+				bottom: 32%;
 				line-height: 0;
 				position: absolute;
 				h4 {
@@ -214,6 +214,28 @@ article {
 						text-decoration: none;
 						color: @white;
 					}
+				}
+			}
+		}
+	}
+}
+
+//Responsive ad container 
+@media screen and (max-width: 1024px) {
+	.container {
+		flex-direction: row;
+		flex-wrap: wrap;
+		margin: 0 auto;
+		.ad-column-1 {
+			padding-bottom: 15px;
+		}
+		.ad-column-2 {
+			display: contents;
+			padding-left: 0;
+			.img-ad3 {
+				img {
+					padding-left: 30px;
+					height: 200px;
 				}
 			}
 		}
@@ -298,7 +320,7 @@ article {
 }
 
 .blog {
-	background-image: url("../img/blog-bg.png");
+	background-image: url('../img/blog-bg.png');
 	height: 708px;
 	.blog-content {
 		padding: 77px 15px 0;
@@ -370,7 +392,7 @@ article {
 					padding: 15px 18px 0;
 					background-color: @white;
 					p {
-						font-family: "Open Sans";
+						font-family: 'Open Sans';
 					}
 					.social {
 						border-top: 1px solid @social-colour;
@@ -412,7 +434,7 @@ footer {
 			width: calc(3 / 12 * 100%);
 			color: @footer-colour;
 			p {
-				font-family: "Open Sans";
+				font-family: 'Open Sans';
 				padding-bottom: 29px;
 				font-size: 14px;
 			}

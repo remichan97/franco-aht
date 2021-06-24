@@ -11,10 +11,10 @@
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
 }
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   font-size: 14px;
   color: #000;
@@ -120,11 +120,11 @@ article {
   text-align: right;
   position: absolute;
   left: 45%;
-  bottom: 130px;
+  bottom: 29%;
 }
 .container .ad-column-1 .img-ad1 .ad1-banner h3 {
   font-size: 30px;
-  font-family: "Pacifico";
+  font-family: 'Pacifico';
 }
 .container .ad-column-1 .img-ad1 .ad1-banner .btn-banner a {
   background: #8262b5;
@@ -142,7 +142,7 @@ article {
 .container .ad-column-2 .img-ad2 .ad2-banner {
   line-height: 0;
   position: absolute;
-  bottom: 104px;
+  bottom: 44%;
   margin-left: 54px;
 }
 .container .ad-column-2 .img-ad2 .ad2-banner h4 {
@@ -161,7 +161,7 @@ article {
 }
 .container .ad-column-2 .img-ad3 .ad3-banner {
   margin-left: 54px;
-  bottom: 112px;
+  bottom: 32%;
   line-height: 0;
   position: absolute;
 }
@@ -182,6 +182,24 @@ article {
   padding: 8px 17px;
   text-decoration: none;
   color: #fff;
+}
+@media screen and (max-width: 1024px) {
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+  .container .ad-column-1 {
+    padding-bottom: 15px;
+  }
+  .container .ad-column-2 {
+    display: contents;
+    padding-left: 0;
+  }
+  .container .ad-column-2 .img-ad3 img {
+    padding-left: 30px;
+    height: 200px;
+  }
 }
 .products {
   padding: 0 15px;
@@ -253,7 +271,7 @@ article {
   font-weight: bolder;
 }
 .blog {
-  background-image: url("../img/blog-bg.png");
+  background-image: url('../img/blog-bg.png');
   height: 708px;
 }
 .blog .blog-content {
@@ -330,7 +348,7 @@ article {
   color: #8262b5;
 }
 .blog .blog-content .blog-listing .blog-item .blog-info p {
-  font-family: "Open Sans";
+  font-family: 'Open Sans';
 }
 .blog .blog-content .blog-listing .blog-item .blog-info .social {
   border-top: 1px solid #c4c4c4;
@@ -369,7 +387,7 @@ footer .footer-container .about-us h4 {
   border-bottom: 1px solid #818181;
 }
 footer .footer-container .about-us p {
-  font-family: "Open Sans";
+  font-family: 'Open Sans';
   padding-bottom: 29px;
   font-size: 14px;
 }
