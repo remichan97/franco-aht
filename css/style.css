@@ -123,23 +123,41 @@ body {
   .menu-bar .hamburger-menu .menu-bar {
     float: left;
     position: relative;
-    padding: 24px 0 19px 30px;
+    padding: 20px 0 19px 30px;
     font-size: 30px;
     border: 0;
     z-index: 2;
   }
-  .menu-bar .hamburger-menu .menu-bar a {
-    color: #000;
+  .menu-bar .hamburger-menu .menu-bar button {
+    background: none;
+    border: none;
+    font-size: 30px;
   }
   .menu-bar .menu {
     display: none;
   }
   .menu-bar .logo {
-    width: 93%;
+    width: 90%;
     float: unset;
   }
 }
+@media screen and (max-width: 480px) {
+  .menu-bar .logo {
+    width: 80%;
+  }
+}
+nav {
+  background: white;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
 nav .mobile-menu {
+  height: 100%;
+  max-height: 350px;
+  width: 100%;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
   display: none;
 }
 @media screen and (max-width: 1240px) {
@@ -254,6 +272,11 @@ article {
   text-decoration: none;
   color: #fff;
 }
+@media screen and (max-width: 1024px) {
+  .container .ad-column-1 .img-ad1 .ad1-banner h3 {
+    font-size: 26px;
+  }
+}
 @media screen and (max-width: 800px) {
   .container {
     flex-direction: row;
@@ -262,6 +285,9 @@ article {
   }
   .container .ad-column-1 {
     padding-bottom: 15px;
+  }
+  .container .ad-column-1 .img-ad1 .ad1-banner h3 {
+    font-size: 30px;
   }
   .container .ad-column-2 {
     display: contents;
@@ -273,16 +299,36 @@ article {
   }
 }
 @media screen and (max-width: 768px) {
+  .container .ad-column-1 {
+    padding-bottom: 15px;
+  }
+  .container .ad-column-1 .img-ad1 .ad1-banner h3 {
+    font-size: 29px;
+  }
   .container .ad-column-2 .img-ad3 img {
     padding-left: 2px;
   }
 }
 @media screen and (max-width: 600px) {
+  .container .ad-column-1 .img-ad1 .ad1-banner h3 {
+    font-size: 22px;
+  }
   .container .ad-column-2 img {
     width: 554px;
   }
+  .container .ad-column-2 .img-ad2 {
+    padding-bottom: 3%;
+  }
   .container .ad-column-2 .img-ad3 img {
     padding-left: unset;
+  }
+}
+@media screen and (max-width: 480px) {
+  .container .ad-column-1 .img-ad1 .ad1-banner h3 {
+    font-size: 18px;
+  }
+  .container .ad-column-2 img {
+    width: 434px;
   }
 }
 .products {
@@ -382,7 +428,6 @@ article {
 .blog .blog-content .blog-listing {
   display: flex;
   display: -webkit-flex;
-  margin: 0 -15px;
   padding-top: 45px;
 }
 .blog .blog-content .blog-listing .blog-item {
@@ -546,7 +591,7 @@ footer .copyright .rights .rights-text {
   width: calc(10 / 12 * 100%);
 }
 footer .copyright .payments {
-  width: calc(3 / 12 * 100%);
+  width: calc(4 / 12 * 100%);
   display: inline-block;
   text-align: right;
   margin-right: 1%;
