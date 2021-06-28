@@ -413,6 +413,11 @@ article {
     width: calc(6 / 12 * 100%);
   }
 }
+@media screen and (max-width: 320px) {
+  .products .product-line-up .item {
+    width: 100%;
+  }
+}
 .blog {
   background-image: url("../img/blog-bg.png");
   height: 708px;
@@ -656,5 +661,26 @@ footer .copyright .payments {
   }
   footer .footer-container .location ul li p {
     padding-left: 10px;
+  }
+}
+@media screen and (max-width: 320px) {
+  footer .footer-container {
+    padding-left: 5px;
+  }
+  footer .footer-container .footer-menu ul {
+    columns: unset;
+  }
+  footer .copyright .rights {
+    display: block;
+    padding-left: 5px;
+  }
+  footer .copyright .rights .rights-text {
+    width: auto;
+    text-align: center;
+  }
+  footer .copyright .rights .payments {
+    display: block;
+    width: auto;
+    text-align: center;
   }
 }
