@@ -675,8 +675,15 @@ footer .footer-container .location ul {
   list-style: none;
   padding-left: 0;
 }
+footer .footer-container .location ul li {
+  position: relative;
+}
+footer .footer-container .location ul li i {
+  position: absolute;
+  top: 5px;
+}
 footer .footer-container .location ul li p {
-  display: inline-block;
+  margin-left: 30px;
 }
 footer .footer-container .location ul li p a {
   text-decoration: none;
@@ -722,9 +729,6 @@ footer .copyright .payments {
   footer .footer-container .location {
     width: 100%;
     margin-left: unset;
-  }
-  footer .footer-container .location ul li p {
-    padding-left: 10px;
   }
 }
 @media screen and (max-width: 320px) {
