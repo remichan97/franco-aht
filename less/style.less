@@ -57,6 +57,9 @@ img {
 	color: @text-header;
 	padding: 5px 30px 0;
 	min-height: 44px;
+	.header-menu {
+		display: none;
+	}
 	.header-text {
 		float: left;
 		padding-top: 5px;
@@ -93,6 +96,38 @@ img {
 			float: left;
 			ul {
 				padding: 0;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 320px) {
+	header {
+		.head {
+			padding-left: 0;
+			min-height: 75px;
+			.header-menu {
+				display: block;
+				float: left;
+				padding: 20px 0 19px 20px;
+				i {
+					font-size: 25px;
+					color: @white;
+				}
+				button {
+					background: none;
+					border: none;
+				}
+			}
+			.links {
+				float: right;
+				.inline {
+					display: block;
+					li {
+						padding: 0;
+						display: list-item;
+					}
+				}
 			}
 		}
 	}
@@ -159,7 +194,7 @@ img {
 			.menu-bar {
 				float: left;
 				position: relative;
-				padding: 20px 0 19px 30px;
+				padding: 20px 0 19px 15px;
 				font-size: 30px;
 				border: 0;
 				z-index: 2;
@@ -180,10 +215,34 @@ img {
 	}
 }
 
+//Responsive navbar
 @media screen and (max-width: 480px) {
 	.menu-bar {
 		.logo {
 			width: 80%;
+		}
+	}
+}
+@media screen and (max-width: 320px) {
+	.menu-bar {
+		.hamburger-menu {
+			.menu-bar {
+				display: none;
+			}
+		}
+		.logo {
+			width: 65%;
+			padding-left: 0;
+		}
+		.wish-list {
+			right: 0;
+			ul {
+				li {
+					&:last-child {
+						padding-left: 20px;
+					}
+				}
+			}
 		}
 	}
 }
@@ -202,7 +261,7 @@ nav {
 		display: none;
 	}
 }
-//Mobile menu-bar
+//Mobile hamburger menu
 @media screen and (max-width: 1240px) {
 	nav {
 		.mobile-menu {
@@ -415,6 +474,35 @@ article {
 					h3 {
 						font-size: 22px;
 					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.container {
+		.ad-column-1 {
+			.img-ad1 {
+				.ad1-banner {
+					left: 10%;
+					bottom: 20%;
+				}
+			}
+		}
+		.ad-column-2 {
+			.img-ad2 {
+				.ad2-banner {
+					bottom: 30%;
+					margin-left: 35px;
+				}
+			}
+		}
+		.ad-column-2 {
+			.img-ad3 {
+				.ad3-banner {
+					margin-left: 35px;
+					bottom: 33%;
 				}
 			}
 		}
@@ -720,6 +808,9 @@ footer {
 							text-decoration: underline;
 						}
 					}
+					&:nth-child(6) {
+						padding-bottom: 0;
+					}
 					float: left;
 					width: 195px;
 					padding: 0 15px 10px 0;
@@ -813,6 +904,15 @@ footer {
 			.footer-menu {
 				ul {
 					columns: unset;
+				}
+			}
+		}
+		.footer-menu {
+			ul {
+				li{
+					&:nth-child(6) {
+						padding-bottom: 10px;
+					}
 				}
 			}
 		}

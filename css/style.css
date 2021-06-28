@@ -33,6 +33,9 @@ img {
   padding: 5px 30px 0;
   min-height: 44px;
 }
+.head .header-menu {
+  display: none;
+}
 .head .header-text {
   float: left;
   padding-top: 5px;
@@ -65,6 +68,35 @@ img {
   }
   header .links ul {
     padding: 0;
+  }
+}
+@media screen and (max-width: 320px) {
+  header .head {
+    padding-left: 0;
+    min-height: 75px;
+  }
+  header .head .header-menu {
+    display: block;
+    float: left;
+    padding: 20px 0 19px 20px;
+  }
+  header .head .header-menu i {
+    font-size: 25px;
+    color: #fff;
+  }
+  header .head .header-menu button {
+    background: none;
+    border: none;
+  }
+  header .head .links {
+    float: right;
+  }
+  header .head .links .inline {
+    display: block;
+  }
+  header .head .links .inline li {
+    padding: 0;
+    display: list-item;
   }
 }
 .menu-bar {
@@ -125,7 +157,7 @@ img {
   .menu-bar .hamburger-menu .menu-bar {
     float: left;
     position: relative;
-    padding: 20px 0 19px 30px;
+    padding: 20px 0 19px 15px;
     font-size: 30px;
     border: 0;
     z-index: 2;
@@ -146,6 +178,21 @@ img {
 @media screen and (max-width: 480px) {
   .menu-bar .logo {
     width: 80%;
+  }
+}
+@media screen and (max-width: 320px) {
+  .menu-bar .hamburger-menu .menu-bar {
+    display: none;
+  }
+  .menu-bar .logo {
+    width: 65%;
+    padding-left: 0;
+  }
+  .menu-bar .wish-list {
+    right: 0;
+  }
+  .menu-bar .wish-list ul li:last-child {
+    padding-left: 20px;
   }
 }
 nav {
@@ -330,6 +377,20 @@ article {
 @media screen and (max-width: 600px) {
   .container .ad-column-1 .img-ad1 .ad1-banner h3 {
     font-size: 22px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .container .ad-column-1 .img-ad1 .ad1-banner {
+    left: 10%;
+    bottom: 20%;
+  }
+  .container .ad-column-2 .img-ad2 .ad2-banner {
+    bottom: 30%;
+    margin-left: 35px;
+  }
+  .container .ad-column-2 .img-ad3 .ad3-banner {
+    margin-left: 35px;
+    bottom: 33%;
   }
 }
 .products {
@@ -597,6 +658,9 @@ footer .footer-container .footer-menu ul li a:hover {
   color: #fff;
   text-decoration: underline;
 }
+footer .footer-container .footer-menu ul li:nth-child(6) {
+  padding-bottom: 0;
+}
 footer .footer-container .location {
   margin-left: calc(127 / 1140 * 100%);
   width: calc(3 / 12 * 100%);
@@ -669,6 +733,9 @@ footer .copyright .payments {
   }
   footer .footer-container .footer-menu ul {
     columns: unset;
+  }
+  footer .footer-menu ul li:nth-child(6) {
+    padding-bottom: 10px;
   }
   footer .copyright .rights {
     display: block;
