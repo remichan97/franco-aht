@@ -21,6 +21,9 @@ body {
   line-height: 24px;
   background: #fff;
 }
+img {
+  object-fit: cover;
+}
 .head {
   margin-left: -15px;
   margin-right: -15px;
@@ -108,7 +111,6 @@ body {
 .menu-bar .wish-list li {
   list-style: none;
   display: inline-block;
-  font-size: 18px;
 }
 .menu-bar .wish-list li i {
   font-size: 30px;
@@ -362,17 +364,19 @@ article {
 }
 .products .product-line-up .item img {
   width: 100%;
-  height: 322px;
+  height: 100%;
+  position: absolute;
 }
 .products .product-line-up .item .product-desc .preview {
   position: relative;
+  padding-bottom: 140%;
 }
 .products .product-line-up .item .product-desc .preview a {
   position: absolute;
-  bottom: 12px;
+  bottom: 5px;
   background-color: #fff;
   left: 5px;
-  padding: 16px 25px;
+  padding: 12px 20px 12px 16px;
   text-decoration: none;
   color: #000;
   font-size: 12px;
@@ -399,6 +403,16 @@ article {
 .products .product-line-up .item .product-desc .price span {
   color: #8262b5;
   font-weight: bolder;
+}
+@media screen and (max-width: 800px) {
+  .products .product-line-up .item {
+    width: calc(4 / 12 * 100%);
+  }
+}
+@media screen and (max-width: 600px) {
+  .products .product-line-up .item {
+    width: calc(6 / 12 * 100%);
+  }
 }
 .blog {
   background-image: url("../img/blog-bg.png");
@@ -432,9 +446,14 @@ article {
   width: auto;
   padding: 0 15px;
 }
+.blog .blog-content .blog-listing .blog-item .blog-img {
+  position: relative;
+  padding-bottom: 56%;
+}
 .blog .blog-content .blog-listing .blog-item img {
   width: 100%;
-  height: 200px;
+  height: 100%;
+  position: absolute;
 }
 .blog .blog-content .blog-listing .blog-item .blog-date {
   width: 62px;
@@ -487,6 +506,16 @@ article {
   color: #c4c4c4;
   font-size: 14px;
   margin-right: 37px;
+}
+@media screen and (max-width: 600px) {
+  .blog .blog-content .blog-listing .blog-item {
+    padding: 0 0 0 15px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .blog .blog-content .blog-listing .blog-item {
+    padding: 0;
+  }
 }
 .owl-theme .owl-dots .owl-dot.active span,
 .owl-theme .owl-dots .owl-dot:hover span {
