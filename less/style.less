@@ -195,12 +195,12 @@ nav {
 		max-height: 350px;
 		width: 100%;
 		overflow-y: scroll;
-		-webkit-overflow-scrolling:touch;
+		-webkit-overflow-scrolling: touch;
 		display: none;
 	}
 }
 //Mobile menu-bar
-@media screen and (max-width: 1240px){
+@media screen and (max-width: 1240px) {
 	nav {
 		.mobile-menu {
 			display: none;
@@ -462,11 +462,11 @@ article {
 		flex-wrap: wrap;
 		margin: 0 -15px;
 		.item {
-			width: 292px;
+			width: calc(3 / 12 * 100%);
 			padding: 0 15px;
 
 			img {
-				width: 263px;
+				width: 100%;
 				height: 322px;
 			}
 			.product-desc {
@@ -537,8 +537,6 @@ article {
 			}
 		}
 		.blog-listing {
-			display: flex;
-			display: -webkit-flex;
 			// margin: 0 -15px;
 			padding-top: 45px;
 			.blog-item {
@@ -603,13 +601,19 @@ article {
 			}
 		}
 	}
-	.load {
-		position: relative;
-		bottom: -30px;
-		width: 100%;
-		display: block;
-		text-align: center;
-	}
+}
+//Owl theme related
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+	background: @accent;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+	background: rgb(176, 163, 197);
+}
+
+.owl-theme .owl-nav.disabled+.owl-dots {
+    margin-top: 30px;
 }
 
 footer {
@@ -662,9 +666,13 @@ footer {
 				list-style: outside none none;
 				list-style-position: inside;
 				li {
-					&:hover {
-						color: @white;
-						text-decoration: underline;
+					a {
+						text-decoration: none;
+						color: @footer-colour;
+						&:hover {
+							color: @white;
+							text-decoration: underline;
+						}
 					}
 					float: left;
 					width: 195px;
@@ -688,7 +696,14 @@ footer {
 				li {
 					p {
 						display: inline-block;
-						padding-left: 30px;
+						a {
+							text-decoration: none;
+							color: @footer-colour;
+							&:hover {
+								color: @white;
+								text-decoration: underline;
+							}
+						}
 					}
 				}
 			}

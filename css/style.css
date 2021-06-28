@@ -357,11 +357,11 @@ article {
   margin: 0 -15px;
 }
 .products .product-line-up .item {
-  width: 292px;
+  width: calc(3 / 12 * 100%);
   padding: 0 15px;
 }
 .products .product-line-up .item img {
-  width: 263px;
+  width: 100%;
   height: 322px;
 }
 .products .product-line-up .item .product-desc .preview {
@@ -426,8 +426,6 @@ article {
   font-weight: 700;
 }
 .blog .blog-content .blog-listing {
-  display: flex;
-  display: -webkit-flex;
   padding-top: 45px;
 }
 .blog .blog-content .blog-listing .blog-item {
@@ -490,12 +488,15 @@ article {
   font-size: 14px;
   margin-right: 37px;
 }
-.blog .load {
-  position: relative;
-  bottom: -30px;
-  width: 100%;
-  display: block;
-  text-align: center;
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  background: #8262b5;
+}
+.owl-theme .owl-dots .owl-dot span {
+  background: #b0a3c5;
+}
+.owl-theme .owl-nav.disabled + .owl-dots {
+  margin-top: 30px;
 }
 footer {
   background-color: #222222;
@@ -555,7 +556,11 @@ footer .footer-container .footer-menu ul li {
   width: 195px;
   padding: 0 15px 10px 0;
 }
-footer .footer-container .footer-menu ul li:hover {
+footer .footer-container .footer-menu ul li a {
+  text-decoration: none;
+  color: #818181;
+}
+footer .footer-container .footer-menu ul li a:hover {
   color: #fff;
   text-decoration: underline;
 }
@@ -575,7 +580,14 @@ footer .footer-container .location ul {
 }
 footer .footer-container .location ul li p {
   display: inline-block;
-  padding-left: 30px;
+}
+footer .footer-container .location ul li p a {
+  text-decoration: none;
+  color: #818181;
+}
+footer .footer-container .location ul li p a:hover {
+  color: #fff;
+  text-decoration: underline;
 }
 footer .copyright {
   border-top: 1px solid #818181;
